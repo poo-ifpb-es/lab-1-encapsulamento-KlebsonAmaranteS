@@ -20,7 +20,7 @@ public class Circulo {
         return (float) area;
     }
 
-    public float getCircuferencia(){
+    public float getCircunferencia(){
         float circuferencia = 2*pi*raio;
         return circuferencia;
     }

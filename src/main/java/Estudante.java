@@ -1,11 +1,10 @@
-public class Estudante {
+class Estudante{
     private String nome;
     private int matricula;
 
-    public int Estudante(String nome, int matricula){
+    public Estudante(String nome, int matricula) {
         this.nome = nome;
         this.matricula = matricula;
-        return matricula;
     }
 
     public String getNome(){
@@ -18,7 +17,8 @@ public class Estudante {
     public int getMatricula(){
         return this.matricula;
     }
+
     public void setMatricula(int matricula){
-        this.matricula = matricula; 
+        this.matricula = matricula;
     }
 }
