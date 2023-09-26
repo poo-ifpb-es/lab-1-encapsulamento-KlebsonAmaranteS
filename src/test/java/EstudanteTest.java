@@ -4,27 +4,27 @@ class EstudanteTest {
 
     @org.junit.jupiter.api.Test
     void testNome() {
-        Estudante e = new Estudante("Antonio", 12345);
+        Estudante estudante = new Estudante("Antonio", 12345);
 
         // O nome deve ser igual ao atribuído na instanciação
-        String nome = e.getNome();
+        String nome = estudante.getNome();
         assertEquals("Antonio", nome);
 
         // O nome pode ser redefinido
-        e.setNome("Maria");
-        assertEquals("Maria", e.getNome());
+        estudante.setNome("Maria");
+        assertEquals("Maria", estudante.getNome());
     }
 
     @org.junit.jupiter.api.Test
     void testMatricula() {
-        Estudante e = new Estudante("Antonio", 12345);
+        Estudante estudante = new Estudante("Antonio", 12345);
 
         // A matrícula deve ser igual à atribuído na instanciação
-        int matricula = e.getMatricula();
+        int matricula = estudante.getMatricula();
         assertEquals(12345, matricula);
 
         // A matrícula pode ser redefinida
-        e.setMatricula(12346);
-        assertEquals(12346, e.getMatricula());
+        estudante.setMatricula(12346);
+        assertEquals(12346, estudante.getMatricula());
     }
 }
